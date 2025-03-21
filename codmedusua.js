@@ -14,7 +14,10 @@ console.log(n3);
     n4 = parseFloat(n4);
     var media = (n1 + n2 + n3) / n4;
 
-if (media >= 0 && media <= 100) {
-    console.log("Média válida:", media);
-} else {
-    console.log("ERRO: A média está fora do intervalo permitido (0 a 100).");
+    if (n1 >= 0 && n1 <= 100 && n2 >= 0 && n2 <= 100 && n3 >= 0 && n3 <=100) {
+        console.log(`A média aritmética entre os números 
+                ${n1}, ${n2}, e ${n3} é ${media}.`);
+    } else {
+        console.log("ERRO: Todos os numeros devem estar entre (0 a 100).");
+    }
+    
