@@ -1,0 +1,19 @@
+//Igor Bruno Andrade de Barros
+//25114290130
+const prompt = require("prompt-sync")({ sigint: true });
+
+var num = parseInt(prompt("Digite um Número Entre 0 a 100000: "));
+
+switch (true) { 
+    case (num >= 1 && num <= 1000):
+        console.log("Compra um PC.");
+        break;
+    case (num >= 1001 && num <= 10000):
+        console.log("Compra um PC Gamer.");
+        break;
+    case (num >= 10001 && num <= 100000):
+        console.log("Compra uma Máquina.");
+        break;
+    default:
+        console.log("Digite um número entre 0 e 100000.");
+}
