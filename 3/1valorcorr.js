@@ -1,3 +1,7 @@
+//IGOR BRUNO ANDRADE DE BARROS
+//25114290130
+
+const prompt = require('prompt-sync')({ sigint: true });
 const horario = prompt("Digite o horário (HH:MM):");
 const distancia = parseFloat(prompt("Digite a distância percorrida (em km):"));
 
@@ -20,5 +24,6 @@ const calcularValor = (horario, distancia) => {
 
     return (valorFixo + (valorPorKm * distancia)).toFixed(2);
 };
+const valorTotal = calcularValor(horario, distancia);
 
-alert(`Valor a pagar: R$ ${calcularValor(horario, distancia)}`);
+console.log("Valor total: " + valorTotal);

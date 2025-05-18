@@ -1,5 +1,5 @@
-//
-
+//IGOR BRUNO ANDRADE DE BARROS
+//25114290130
 const prompt = require('prompt-sync')({ sigint: true });
 const premios = [15, 85, 86];
 

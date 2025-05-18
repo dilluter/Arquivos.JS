@@ -1,6 +1,3 @@
-//Igor Bruno Andrade de Barros
-//25114290130
-
 const prompt = require("prompt-sync")({ sigint: true });
 
 let cor = prompt("Digite uma cor (verde, amarelo ou vermelho): ");
